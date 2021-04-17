@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.yellow {
+    color: yellow;
+    background-color: pink;
+    font-size: 50px;
+    margin: 0 auto;
+}

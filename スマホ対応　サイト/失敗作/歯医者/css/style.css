@@ -1,0 +1,245 @@
+@charset "utf-8";
+
+
+html {
+    background-color: rgb(39, 177, 27);
+}
+
+body {
+    background-color: rgb(39, 177, 27);
+    width: 100%;
+    margin: 10px 0;
+}
+
+#wrap {
+    width: 100%;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+
+/* ------------ ヘッダー -------------------- */
+header {
+    margin-bottom: 20px;
+    display: flex;
+    margin-left: 12%;
+}
+
+.dentalclinic {
+    margin-top: 45px;
+    margin-left: -2px;
+    margin-right: 19%;
+}
+
+.tel {
+    margin-top: 5px;
+    margin-right: 5%;
+    margin-left: 20%;
+}
+
+.appeal {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.telephone {
+    margin-left: 10px;
+    display: flex;
+    margin-bottom: -30px;
+}
+
+.number {
+    margin-left: 25%;
+    font-size: 23px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.reserve {
+    border: solid 1px gray;
+    margin-bottom: 10px;
+    padding: 7px 20px;
+}
+
+.holiday {
+    color: red;
+}
+
+/* ------------- ナビゲーション ---------------- */
+#nav {
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 80%;
+    border: solid 1px gray;
+    background-color: green;
+    color: white;
+}
+
+#nav ul {
+    margin: 0px;
+    padding: 0%;
+    list-style-type: none;
+    border: solid 1px green;
+    display: flex;
+}
+
+#nav ul li {
+    float: left;
+    width: 19%;
+    text-align: center;
+    border-left: solid 1px white;
+}
+
+#nav ul li:hover {
+    background-color: blue;
+
+}
+
+a {
+    color: white;
+}
+
+
+/* ---------------- 一般歯科 -------------------- */
+.box_1 {
+    margin-top: 10px;
+    width: 25%;
+    margin-left: 8%;
+    display: block;
+}
+
+.healing {
+    border: solid 1px white;
+    background-color: white;
+}
+
+.shurui {
+    border-radius: 5%;
+    border: solid 1px green;
+    background-color: green;
+    padding-left: 15px;
+    color: white;
+}
+
+ul.chosee {
+    list-style-type: square;
+    color: black;
+    border-bottom: solid 1px aquamarine;
+    margin: 15px;
+    padding: 10px;
+}
+
+::marker {
+    color: aquamarine;
+}
+
+/* ------------------- 写真 --------------------- */
+.picture {
+    margin-left: 40%;
+    margin-top: -15%;
+    display: flex;
+}
+
+/* ------------------ 審美歯科 -------------------- */
+.box_2 {
+    margin-top: 20px;
+    width: 25%;
+    margin-left: 8%;
+    display: block;
+}
+
+
+
+/* ------------------ 新着情報 ---------------------- */
+.information {
+    margin-left: 40%;
+    margin-top: -12%;
+    width: 49%;
+    border: solid 1px black;
+    background-color: white;
+}
+
+
+.new {
+    margin: 20px;
+    border-bottom: double 2px green;
+    padding-bottom: 2%;
+}
+
+li.inform {
+    list-style: none;
+    display: flex;
+    border-bottom: dotted 1px black;
+    margin: 10px;
+    padding: 5px;
+    text-align: justify;
+}
+
+span {
+    font-weight: bold;
+    font-size: 12px;
+    width: 30%;
+    margin-right: 10px;
+    text-align: left;
+}
+
+
+
+.jouhou {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* ------------------- footer ----------------------- */
+.box_3 {
+    display: flex;
+}
+
+.menu {
+    border: solid 2px green;
+    background-color: green;
+    color: white;
+    margin-top: 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+    border-radius: 5%;
+}
+
+.menu_1 {
+    display: flex;
+    margin: 10px;
+}
+
+p.menu_2 {
+    margin-left: 2%;
+    margin-right: 11px;
+}
+
+a.cercle {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    text-align: center;
+    border-radius: 50%;
+    border: solid 3px white;
+    margin-right: 7px;
+}
+
+
+.name_1 {
+    margin-left: 8%;
+    margin-right: 8%;
+    border-bottom: solid 2px green;
+}
+
+p.name_2 {
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+/* ------------------ copyright ----------------------- */
+div#copyright {
+    margin-top: 2%;
+    text-align: center;
+}

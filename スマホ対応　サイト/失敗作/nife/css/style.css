@@ -1,0 +1,204 @@
+@charset "utf-8";
+
+body {
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    background-color: white;
+    width: 100%;
+}
+
+/* --------------- ヘッダー ------------------- */
+header {
+    position: absolute;
+    display: flex;
+    top: 0;
+    left: 0;
+}
+
+img.rogo {
+    width: 10%;
+    margin-right: -7%;
+}
+
+.navigation {
+    color: white;
+    margin-left: 10%;
+    margin-top: 4%;
+}
+
+.online {
+    padding: 4%;
+    margin-left: 19%;
+    padding-right: 4%;
+    background-color: gray;
+    right: 100%;
+}
+
+/* ---------------- ナビゲーション -------------------- */
+ul {
+    display: flex;
+    list-style: none;
+    margin-left: 4%;
+}
+
+li {
+    padding-left: 2%;
+}
+
+
+/* --------------- picture ----------------- */
+.picture {
+    position: relative;
+}
+
+
+/* --------------- 写真 ------------------ */
+img {
+    width: 100%;
+}
+
+/* --------------- pタグ ------------------ */
+p.englich {
+    position: absolute;
+    color: white;
+    top: 40%;
+    right: 50%;
+    font-size: 14px;
+}
+
+p.japanese {
+    position: absolute;
+    color: white;
+    top: 43%;
+    right: 50%;
+    font-size: 60px;
+}
+
+/* ----------- online shop header ----------------------- */
+div#header {
+    background-color: rgb(226, 0, 226);
+    padding: 1%;
+}
+
+div#sent {
+    display: flex;
+}
+
+div#free {
+    margin-left: 45%;
+}
+
+div#money {
+    margin-left: 25%;
+    background-color: purple;
+    padding: 1%;
+}
+
+/* ----------------- 購入 --------------------------- */
+div#buy {
+    margin-top: 2%;
+    display: flex;
+}
+
+div#online {
+    margin-top: 4%;
+    margin-left: 12%;
+    border-left: solid 1px black;
+    padding-left: 3%;
+}
+
+/* -------------- 検索 ---------------------- */
+form {
+    display: flex;
+}
+
+#sbox1{
+    max-width:300px;
+    height:50px;
+    border-radius:2px;
+    outline:0;
+    margin-bottom:40px;
+    background:#eee;	
+}
+
+i.fas.fa-search {
+    color: black;
+    font-size: 20px;
+    margin-left: 20%;
+}
+
+/* ---------------- ログイン ---------------------------- */
+div#rogin {
+    margin-left: 8%;
+    margin-top: 4%;
+}
+
+/* -------------- カート ------------------- */
+div#cart {
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+span {
+    margin-left: 10px;
+}
+
+/* ---------------- スライドショー ---------------------- */
+img.nife {
+    width: 50%;
+}
+
+#slider .bxslider {
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    position: relative;
+}
+
+/* ----------------- ナビゲーション ------------------------- */
+div#navigation {
+    display: flex;
+    margin-left: -14px;
+    border-top: solid 1px gray;
+}
+
+/* ---------------- お知らせ -------------------- */
+div#news {
+    margin-top: 5%;
+    margin-left: 2%;
+    margin-right: 2%;
+    display: flex;
+    background-color: rgb(252, 214, 220);
+}
+
+div#information {
+    color: red;
+    border-bottom: solid 1px red;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 18px;
+}
+
+ul.inform {
+    display: block;
+    margin-top: 5%;
+    font-size: 14px;
+}
+
+li.jouhou {
+    white-space: nowrap;
+    margin-bottom: 2%;
+}
+
+span {
+    margin-left: 10px;
+    margin-right: 10%;
+    color: gray;
+}
+

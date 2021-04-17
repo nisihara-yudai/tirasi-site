@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+      <h1>お問い合わせ</h1>
+      <table>
+          <tbody>    
+              <tr>
+                  <td><label>お名前：</label></td>
+                  <td><input type="text" name="name" id="name"></td>
+              </tr>
+              <tr>
+                  <td><label>住所：</label></td>
+                  <td><input type="text" name="address" id="address"></td>
+              </tr>
+              <tr>
+                  <td><label>お問い合わせ項目:</label></td>
+                  <td>
+                      <select name="question" id="question">
+                          <option value="nothing">選択してください</option>
+                          <option value="opinion">ご意見・お考え</option>
+                          <option value="hope">ご要望・ご希望</option>
+                      </select>
+                  </td>
+              </tr>
+              <tr>
+                  <td><label>お問い合わせ内容:</label></td>
+                  <td>
+                      <textarea name="samurai" id="samurai" cols="20" rows="10"></textarea>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+
+      <script>
+        function qa_samurai() {
+          
+          const name = document.getElementById("name").value;
+          console.log(name);
+    
+          const address = document.getElementById("address").value;
+          console.log(address);
+    
+          const question = document.getElementById("question").value;
+          console.log(question);
+          
+          const samurai = document.getElementById("samurai").value;
+          console.log(samurai);
+    
+        }
+        
+      </script>
+      
+      <button onclick="qa_samurai()">click me</button>
+  </body>
+</html>

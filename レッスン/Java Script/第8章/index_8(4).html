@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Character {
+            constructor(name, hp) {
+                this.name = name;
+                this.hp = hp;
+            }
+
+            attack(){
+                console.log(this.name + 'の攻撃！');
+            }
+        }
+        
+        // 主人公のクラスを作成する
+        class Hero extends Character {
+
+            // キャラクターを操作するメソッド
+            control() {}
+
+            // 必殺技を実行するメソッド
+            superAttack() {}
+
+            // 会話するメソッド
+            speak() {}
+        }
+
+        // 的のクラスを作成する
+        class Enemy extends Character {
+
+            // 倒された時に落とすアイテム
+            dropItem () {
+
+            }
+
+            // 獲得できるポイント(経験値)
+            getPoint() {
+
+            }
+        }
+
+        const hero = new Hero('主人公', 100);
+        const enemy = new Enemy('敵', 10);
+
+        hero.attack();
+        enemy.attack();
+
+        //出力結果
+        //主人公の攻撃
+        //敵の攻撃
+    </script>
+</body>
+</html>

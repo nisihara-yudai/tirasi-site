@@ -1,0 +1,379 @@
+@charset "UTF-8";
+
+
+body {
+    width: 100vw;
+    background-color: yellowgreen;
+}
+
+#wrapper {
+    width: 100vw;
+    background-color: white;
+}
+
+/* -------------------- header ------------------------ */
+div#header {
+    background-color: yellowgreen;
+    position: relative;
+    height: 270px;
+    width: 100%;
+    padding: 5%;
+}
+
+div#english {
+    /* margin-top: 37%; */
+    /* margin-left: 14%; */
+    font-size: 25px;
+    top: 5%;
+}
+
+
+h1 {
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit;
+    margin: 0;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+
+}
+
+#japanese {
+    font-size: 25px;
+    position: absolute;
+    /* margin-left: -400px; */
+}
+
+/* -------------------- 目次 ------------------------------ */
+div#page {
+    background-color: lightblue;
+    /* height: 400px; */
+}
+
+h2#mokuji {
+    font-size: 25px;
+    padding: 5%;
+}
+
+li.koumoku_1 {
+    /* width: 400px; */
+    /* margin-left: 100px; */
+    list-style: square;
+    font-size: 17px;
+    /* margin-top: 5%; */
+}
+
+#page ul li.koumoku_1 p:hover {
+    color: white;
+    border-bottom: solid 1px white;
+    padding-bottom: 5px;
+}
+
+li.koumoku_2 {
+    /* width: 400px; */
+    /* margin-left: 100px; */
+    list-style: square;
+    font-size: 17px;
+    /* margin-top: 25px; */
+}
+
+#page ul li.koumoku_2 p:hover {
+    color: white;
+    border-bottom: solid 1px white;
+    padding-bottom: 5px;
+}
+
+span.pages {
+    margin-left: 11%;
+}
+
+p.shurui_1 {
+    /* width: 120px; */
+    /* margin-left: 30px; */
+}
+
+p.shurui_2 {
+    /* width: 240px; */
+    /* margin-left: 30px; */
+}
+
+p.shurui_3 {
+    /* width: 180px; */
+    /* margin-left: 30px; */
+}
+
+p.shurui_4 {
+    /* width: 300px; */
+    /* margin-left: 30px; */
+}
+
+/* ------------------- 自己紹介 ------------------------- */
+div#introduce {
+    background-color: aquamarine;
+    /* height: 870px; */
+}
+
+h2.shoukai {
+    padding: 5%;
+    font-size: 25px;
+}
+
+div#mokujilist {
+    font-size: 17px;
+    padding: 5%;
+    padding-top: 10px;
+}
+
+div#jikoshoukai {
+    font-size: 17px;
+    padding: 5%;
+    padding-top: 10px;
+}
+
+a.twitter {
+    text-align: center;
+    margin-top: 20px;
+    color: blue;
+}
+
+/* ------------------ 実際に学んでいる事の紹介 ---------------------------- */
+div#learning {
+    background-color: lightskyblue;
+    /* height: 870px; */
+}
+
+h2#gakushu {
+    padding: 30px;
+    font-size: 25px;
+}
+
+p.title {
+    width: 300px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+}
+
+span.tasseido {
+    margin-left: 20px;
+}
+
+li.text {
+    font-size: 25px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+li#html {
+    display: flex;
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+li#css {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+li#js {
+    display: flex;
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+/* -------------------- 作品紹介 --------------------------- */
+div#product {
+    background-color: lightcyan;
+    width: 100%;
+    /* height: 1480px; */
+}
+
+a {
+    display: block;
+}
+
+h2.produce {
+    padding: 35px;
+    font-size: 25px;
+}
+
+div#work {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.works_1 {
+    width: 300px;
+    margin: 0 auto;
+    /* margin-left: 40px; */
+    /* margin-right: 100px; */
+}
+
+.works_1 a {
+    text-align: center;
+}
+
+.sakuhin_1 {
+    /* display: flex; */
+    margin-top: 0;
+}
+
+.sakuhin_2 {
+    /* display: flex; */
+    margin-top: 30px;
+}
+
+p.setumei {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* margin-left: 35px; */
+}
+
+img.products {
+    width: 250px;
+    /* margin-left: 50px; */
+    /* margin-bottom: 20px; */
+}
+
+.works_2 {
+    width: 300px;
+    margin: 0 auto;
+    /* margin-right: 30px; */
+}
+
+.works_2 a {
+    text-align: center;
+}
+
+h3#kurou {
+    border-bottom: solid 1px black;
+    padding: 10px;
+    text-align: center;
+}
+
+div#episode {
+    border: solid 1px black;
+    width: 270px;
+    margin: 0 auto;
+    margin-top: 30px;
+    /* margin-left: 492px; */
+}
+
+li.explain {
+    padding: 10px;
+}
+
+li.text {
+    font-size: 17px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+li.text:last-child {
+    margin-bottom: 20px;
+}
+
+/* -------------------- お問い合わせ ------------------------- */
+div#contact {
+    background-color: lightyellow;
+    width: 100%;
+    /* height: 700px; */
+}
+
+h3.contact-title {
+    padding: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+p#toiawase {
+    /* margin-left: 40px; */
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+div#box {
+    border: solid 2px black;
+    background-color: lightgray;
+    padding: 5%;
+}
+
+label {
+    margin-left: 20px;
+}
+
+span.hissu {
+    background-color: red;
+    /* margin-left: 30px; */
+    margin-left: 10%;
+    color: white;
+}
+
+table {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    /* margin-left: 40px; */
+    border: solid 1px black;
+}
+
+tbody {
+    border: solid 2px black;
+}
+
+td.koumoku {
+    width: 100%;
+    border-right: solid 1px black;
+    border-bottom: solid 1px black;
+    background-color: pink;
+}
+
+td.ran {
+    width: 530px;
+    border-bottom: solid 1px black;
+}
+
+.submit {
+    text-align: center;
+}
+
+button {
+    /* margin-left: 40px;
+    margin-top: 15px; */
+    text-align: center;
+}
+
+div#renraku {
+    /* margin-left: 425px; */
+    padding: 7px;
+    width: 288px;
+    margin: 0 auto;
+}
+
+div#top {
+    /* margin-left: 1000px; */
+    width: 130px;
+    display: block;
+    margin: 0 0 0 auto;
+    border: solid 1px coral;
+    /* margin-right: 50px; */
+    background-color: coral;
+}
+
+div#top a {
+    text-align: center;
+}
+
+p#top a:hover {
+    color: white;
+}
+
+.br-sp {
+    display: block;
+}
+
+

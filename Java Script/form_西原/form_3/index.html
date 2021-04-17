@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>大会参加お申し込みフォーム</h1>
+    <table>
+        <tbody>
+            <tr>
+                <td><lavel>お名前:</lavel></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+            <tr>
+                <td><lavel>フリガナ:</lavel></td>
+                <td><input type="text" name="furigana" id="furigana"></td>
+            </tr>
+            <tr>
+                <td><lavel>メールアドレス（代表者）：</lavel></td>
+                <td><input type="text" name="mail" id="mail"></td>
+            </tr>
+            <tr>
+                <td><lavel>連絡先 :</lavel></td>
+                <td><input type="text" name="renraku" id="renraku"></td>
+            </tr>
+            <tr>
+                <td><lavel>参加人数 :</lavel></td>
+                <td><input type="text" name="menber" id="menber"></td>
+            </tr>
+
+            <button type="submit" id="button">参加</button>
+            
+            <div></div>
+
+            <script>
+                document.getElementById('button').onclick = function(){
+                    let p_name = document.getElementById(name);
+                    // <span>は全て消す
+                    $('span').remove();
+
+                    if(name !== "") { //名前が入力されていれば
+                        
+                        // 入力した名前をdivの中に表示
+                        // <p>名前： 梵</p>
+                        let p_name = $('<p>', {text: '名前:' + name});
+                        // <div><p>名前： 梵</p></div>
+                        $(div).append('p_name');
+                            
+                        return true;                            
+
+                    }else {//そうでなければ
+                        //<span>お名前を入力してください</span>
+                        let span_name = $('<span>',{text:'名前を入力してください'});
+                            span_name.addClass('error');//<span class = "error">お名前を入力してください</span>
+                            $('input[name="name"]').after(span_name);
+                            // お名前: <input type = "text" name="name"><span class = "error">お名前を入力して下さい</span>
+
+                            return false;
+
+                            
+                }
+            };
+    
+            </script>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js">
+            </script>
+        </tbody>
+    </table>
+</body>
+</html>

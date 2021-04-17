@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>オンラインショップ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            $('.slider').bxSlider(
+                {auto: true}    
+            );
+        });
+    </script>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <div id="sent">
+                <div id="free">製品ご購入代金30,000円以上で送料無料</div>
+                <div id="money">送料について詳しく見る</div>
+            </div>
+        </div>
+        <div id="buy">
+            <img src="images/rogo.jpg" class="rogo" alt="">
+            <div id="online">オンラインストア</div>
+            <form action="自分のサイトURL" method="get">
+                <i class="fas fa-search"></i><input id="sbox1"  id="s" name="s" type="text" placeholder="検索 …" />
+            </form>
+            <div id="rogin">ログイン/会員登録</div>
+            <div id="cart">カート<span>🛒</span></div>
+        </div>
+        <div id="navigation">
+            <ul class="navi">
+                <li>すべてのカテゴリー</li>
+                <li>ランキングから探す</li>
+                <li>家庭向け製品</li>
+                <li>刃の形状から探す</li>
+                <li>ハンドルから探す</li>
+                <li>素材から探す</li>
+                <li>シリーズから探す</li>
+            </ul>
+        </div>
+        <div id="slider">
+            <div class="bxslider">
+                <div>
+                    <img src="images/nife_1.jpg" class="nife" alt="">
+                </div>
+                <div>
+                    <img src="images/nife_2.jpg" class="nife" alt="">
+                </div>
+                <div>
+                    <img src="images/nife_3.jpg" class="nife" alt="">
+                </div>
+                <div>
+                    <img src="images/nife_4.jpg" class="nife" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="news">
+            <div id="information">重要なお知らせ</div>
+            <ul class="inform">
+                <li class="jouhou"><span>2021年2月20日</span>ホームページを更新しました</li>
+                <li class="jouhou"><span>2021年2月10日</span>イベントが開催されます</li>
+                <li class="jouhou"><span>2021年1月12日</span>ネットの不備で、オンラインショップは一時使えません</li>
+            </ul>
+        </div>
+        <div id="innyou">包丁のスライドショーの写真:https://netshop.tsjiba.or.jp/products/list.php?category_id=102</div>
+    </div>
+</body>
+</html>

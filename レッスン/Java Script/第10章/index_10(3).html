@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="text">こんにちは！</h1>
+
+    <script>
+        const h1 = document.getElementById("text");//HTML要素を取得
+        // HTML要素.style.fontSize = `48px`
+        let count = 0;
+
+        const timer = setInterval(() => {
+            if(h1.style.fontSize == '48px') { //追加
+                return;
+            }
+            
+            h1.style.fontSize = count + 'px';
+            count++;
+
+            //繰り返し処理を止める
+            // if () clearInterval(timerID)
+            if (count >= 100) clearInterval(timer);
+        }, 10);
+    </script>
+</body>
+</html>

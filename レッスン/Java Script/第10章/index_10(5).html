@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+  margin: 0;
+}
+.screenBlue {
+  height: 100vh;
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  background-color: #88f;
+}
+.screenRed {
+  height: 100vh;
+  color: #fff;
+  font-size: 5em;
+  text-align: center;
+  background-color: #f88;
+}
+.pagetop {
+  display: none;
+  
+  padding: 40px 10px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 50%;
+  
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+}
+.pagetop:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+    </style>
+    <div class="screenBlue">ここがトップページです</div>
+    <div class="screenRed">2ページ目</div>
+    <div class="screenBlue">3ページ目</div>
+    <div class="screenRed">4ページ目</div>
+    <div class="screenBlue">5ページ目</div>
+
+    <script>
+        const topLink = document.getElementById("top");
+let scrollValue;
+
+//画面をスクロールするたびにイベントを発生させる
+window.addEventListener("scroll", () => {
+  scrollValue = document.scrollingElement.scrollTop;
+
+  //スクロール量が300を超えるかどうかでボタンの表示・非表示を切り替える
+  if (scrollValue >= 300) {
+    topLink.style.display = "inline"; //ボタンを表示
+  } else if (scrollValue < 300) {
+    topLink.style.display = "none"; //ボタンを非表示
+  }
+});
+
+
+//画面トップに戻る際にアニメーションさせる
+topLink.addEventListener("click", () => {
+  
+  //一定の間隔で繰り返し処理する
+  const timer = setInterval(() => {
+    if (scrollValue < 0) clearInterval(timer);//トップに戻ったらタイマーをリセット
+    
+    document.scrollingElement.scrollTop = scrollValue;
+    scrollValue = scrollValue - 10; //スクロール量を10ずつ減らしていく
+  });
+});
+
+    </script>
+
+    <a class="pagetop" id="top">TOPに戻る</a>
+</body>
+</html>

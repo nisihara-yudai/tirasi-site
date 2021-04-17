@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <h1>ご質問</h1>
+    お名前:<input type="text" name="name"><br>
+    住所:<input type="text" name="address"><br>
+    年齢:<input type="text" name="age"><br>
+    質問項目:
+    <select name="question" id="question">
+        <option value="nothing">選択して下さい</option>
+        <option value="opinion">ご意見・お考え</option>
+        <option value="request">ご要望・ご希望</option>
+    </select><br>
+    お問い合わせ内容:
+    <textarea name="textarea" cols="30" rows="10" placeholder="お問い合わせ内容"></textarea><br>
+    <button type="submit">送信</button>
+
+    <div id="inputName"></div>
+</body>
+</html>

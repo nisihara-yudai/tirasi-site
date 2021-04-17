@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+@media screen and (min-width: 600px) {
+    /* 画面サイズが600px以上のモニタでの適応 */
+
+    #japanese,#english,h2#mokuji,h2.shoukai,h2#gakushu,li.text,li#html,li#css,li#js,h2.produce,h3.contact-title{
+        font-size: 50px;
+    }
+
+    li.koumoku_1,li.koumoku_2,div#mokujilist.div#jikoshoukai,li.text{
+        font-size: 25px;
+    }
+
+    img.products {
+        width: 450px;
+    }
+    
+    .sakuhin_1 {
+        display: flex;
+    }
+
+    .sakuhin_2 {
+        display: flex;
+    }
+
+    .br-sp {
+        display: none;
+    }
+
+
+}
+    

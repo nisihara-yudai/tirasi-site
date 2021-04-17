@@ -1,0 +1,198 @@
+@charset "utf-8";
+
+body {
+    background-color: #eee;
+    height: 100vh;
+}
+
+article {
+    height: 100vh;
+}
+
+#wrapper {
+    /* background-color: aqua; */
+    /* height: 1vh; */
+    width: 980px;
+    margin: 0 auto;
+    font-size: 18px;
+    border-top: solid 10px aqua;
+}
+
+
+
+
+/* ------------------ ヘッダー ----------------------------- */
+header {
+    display: flex;
+}
+
+#rogo {
+    margin-right: -5%;
+}
+
+img.rogo {
+    width: 45%;
+    margin-top: 10%;
+}
+
+#juusho {
+    margin-top: 7%;
+}
+
+
+#telephone {
+    display: flex;
+    padding-left: 200px;
+}
+
+#denwa {
+    font-size: 25px;
+}
+
+p#number {
+    font-size: 30px;
+    margin-top: 5%;
+}
+
+
+
+
+/* ------------------ picture ---------------------- */
+#picture {
+    margin-top: 7%;
+}
+
+/* ------------------ navigation ---------------------- */
+#navi {
+    border: solid 1px black;
+    margin-top: 3%;
+}
+
+ul.navigation {
+    list-style: none;
+    display: flex;
+}
+
+.navigation li {
+    width: 25%;
+    text-align: center;
+}
+
+/* ------------------- 説明 -------------------------- */
+li.explain {
+    list-style: none;
+    margin-left: 3%;
+    margin-bottom: 3%;
+}
+
+
+/* ------------------ 特徴 ------------------------- */
+#feature {
+    margin-top: 5%;
+}
+
+
+/* ------------------- inform ------------------------ */
+#inform {
+    display: flex;
+}
+
+#jouhou {
+    border: solid 1px black;
+    text-align: center;
+    width: 50%;
+}
+
+#open {
+    margin-top: 5%;
+}
+
+.timescajule {
+    border: solid 1px black;
+    margin-top: 5%;
+    margin-left: 3%;
+}
+
+.day {
+    border: solid 1px black;
+}
+
+.kaiten {
+    border: solid 1px black;
+    color: green;
+}
+
+#news {
+    border: solid 1px black;
+    width: 80%;
+    border-left: none;
+}
+
+
+
+#new {
+    padding: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-bottom: solid 1px black;
+}
+
+ul.internet {
+    list-style: none;
+    margin-right: 5%;
+}
+
+span {
+    width: 30%;
+    display: block;
+    line-height: 65px;
+}
+
+p.naiyou {
+    width: 70%;
+}
+
+li.information {
+    display: flex;
+    border-bottom: dotted 1px green;
+}
+
+
+/* ------------------ news_2 ------------------- */
+#news table {
+    padding: 30px;
+}
+
+#news tr {
+    height: 77px;
+}
+
+#news th {
+    width: 30%;
+    text-align: left;
+    border-bottom: dotted 2px green;
+}
+
+#news td {
+    border-bottom: dotted 2px green;
+}
+
+/* ------------------ 住所 ---------------------- */
+#address {
+    display: flex;
+    margin-top: 5%;
+}
+
+div#jusho {
+    width: 45%;
+    border: solid 1px black;
+    padding: 3%;
+}
+
+/* ------------------ 引用 --------------------- */
+#innyou {
+    font-size: 14px;
+    border: solid 1px black;
+    width: 55%;
+    padding: 3%;
+}
